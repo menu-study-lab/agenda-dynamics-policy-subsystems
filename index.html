@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061216">
+  <title>议程动力学与政策子系统｜政策意象、政策场域与政策变化</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="deck-viewport">
+    <main class="deck-stage" id="stage" aria-label="议程动力学与政策子系统网页演示">
+      <header class="chrome">
+        <div class="brand">AGENDA DYNAMICS · 1991</div>
+        <div class="section" id="sectionLabel">封面</div>
+        <div class="counter"><b id="counterCurrent">01</b> / <span id="counterTotal">18</span></div>
+      </header>
+
+      <div id="deck"></div>
+
+      <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+      <div class="controls" aria-label="演示控制">
+        <button class="control" id="prevBtn" type="button" aria-label="上一页">‹</button>
+        <button class="control" id="nextBtn" type="button" aria-label="下一页">›</button>
+        <button class="control" id="notesBtn" type="button" aria-label="显示或隐藏讲者备注">N</button>
+        <button class="control" id="overviewBtn" type="button" aria-label="打开页面总览">O</button>
+        <button class="control" id="fullscreenBtn" type="button" aria-label="进入全屏">F</button>
+      </div>
+
+      <div class="help">
+        <b>← / →</b> 翻页　<b>N</b> 讲者备注　<b>O</b> 总览　<b>F</b> 全屏
+      </div>
+
+      <aside class="notes-panel" id="notesPanel" aria-live="polite">
+        <div class="notes-label">讲者备注</div>
+        <div id="notesText"></div>
+      </aside>
+
+      <section class="author-modal" id="authorModal" aria-hidden="true" aria-modal="true" role="dialog" aria-labelledby="authorModalName">
+        <div class="author-modal-card">
+          <button class="author-modal-close" id="authorModalClose" type="button" aria-label="关闭作者简介">×</button>
+          <img id="authorModalPortrait" src="" alt="">
+          <div class="author-modal-copy">
+            <div class="notes-label">作者简介</div>
+            <h2 id="authorModalName"></h2>
+            <p id="authorModalRole"></p>
+            <p id="authorModalBio"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview" id="overview" aria-label="页面总览" aria-modal="true" role="dialog">
+        <div class="overview-grid" id="overviewGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <noscript>此演示需要启用 JavaScript。</noscript>
+  <script src="content.js"></script>
+  <script src="deck.js"></script>
+</body>
+</html>
