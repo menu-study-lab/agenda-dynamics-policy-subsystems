@@ -147,13 +147,13 @@ window.DECK_DATA = {
           </blockquote>
           <div class="claim-core reveal d3">
             <div class="core-side image-side">
-              <small>MEANING</small>
+              <small>POLICY IMAGE</small>
               <strong>政策意象</strong>
               <span>问题如何被理解</span>
             </div>
             <div class="core-cross">×</div>
             <div class="core-side venue-side">
-              <small>INSTITUTIONS</small>
+              <small>POLICY VENUE</small>
               <strong>政策场域</strong>
               <span>争议在哪里处理</span>
             </div>
